@@ -1,3 +1,46 @@
-@tailwind base;@tailwind components;@tailwind utilities;
-body{@apply bg-slate-950 text-slate-100;}
-.card{@apply bg-slate-900 border border-slate-800 rounded p-4;}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.bg-grid {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(45, 212, 191, 0.16), transparent 36%),
+    radial-gradient(circle at 80% 0%, rgba(124, 58, 237, 0.2), transparent 34%),
+    #020617;
+}
+
+.hero {
+  background: linear-gradient(125deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.7));
+}
+
+.panel {
+  @apply rounded-2xl border border-cyan-400/20 bg-slate-900/70 p-6 backdrop-blur;
+}
+
+.panel-title {
+  @apply text-xl font-semibold;
+}
+
+.btn-main {
+  @apply rounded-xl bg-cyan-400 text-slate-950 font-semibold px-5 py-3 hover:bg-cyan-300 transition;
+}
+
+.btn-alt {
+  @apply rounded-xl border border-cyan-300/40 text-cyan-200 px-5 py-3 hover:bg-cyan-400/10 transition;
+}
+
+.quote-card {
+  @apply rounded-xl bg-slate-800/60 border border-slate-700 p-4 flex justify-between items-center;
+}
+
+.chat-row {
+  @apply rounded-lg bg-slate-800/70 border border-slate-700 p-3 flex items-center gap-3;
+}
+
+.input {
+  @apply flex-1 rounded-xl bg-slate-800 border border-slate-700 px-4 py-3;
+}

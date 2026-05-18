@@ -1,4 +1,4 @@
 import { PrismaClient } from '@prisma/client';
 export async function runReputationEngine(prisma: PrismaClient){
-  return prisma.(async(tx)=>tx.auditLog.create({data:{action:'SIM_reputationEngine',entity:'SIM',entityId:'core',payload:{at:new Date().toISOString()}}}));
+  return prisma.$transaction(async(tx)=>tx.auditLog.create({data:{action:'SIM_reputationEngine',entity:'SIM',entityId:'core',payload:{at:new Date().toISOString()}}}));
 }

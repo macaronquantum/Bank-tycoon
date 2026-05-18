@@ -37,3 +37,22 @@ Page `/admin` + endpoint `/api/simulation/tick` pour piloter des ticks en dev.
 - Construire image Docker
 - Fournir `DATABASE_URL`, `REDIS_URL`, `NEXTAUTH_*`
 - Lancer web + worker
+
+## Nouvelle expérience Capital Tycoon
+- Landing page premium inspirée de la direction artistique fournie.
+- Chat global en quasi temps réel: `GET/POST /api/chat/messages`.
+- Cotations live: `GET /api/market/quotes` (Yahoo Finance, fallback local si indisponible).
+- Sessions de jeu administrables: `GET/POST /api/game/sessions` avec session par défaut `Global Season`.
+- Tutoriel de première connexion: `/tutorial`.
+
+## Authentification
+- Email/mot de passe conservé.
+- Google OAuth prêt à l’activation via variables:
+  - `GOOGLE_CLIENT_ID`
+  - `GOOGLE_CLIENT_SECRET`
+  - `NEXTAUTH_URL`
+  - `NEXTAUTH_SECRET`
+
+## Sécurité & conformité
+- Les agents IA intégrés doivent rester conformes aux lois et CGU applicables.
+- Aucun modèle ni usage illégal n’est implémenté.
