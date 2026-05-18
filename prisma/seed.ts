@@ -1,4 +1,4 @@
-import { PrismaClient, BankArchetype } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 const countries = [
 ['Reguloria','RGL'],['Liberalis','LBR'],['Emergia','EMG'],['Volatilia','VLT'],['Finhuba','FHB'],['Taxhavenia','TXH'],['Middland','MDL'],['Neotera','NEO']
