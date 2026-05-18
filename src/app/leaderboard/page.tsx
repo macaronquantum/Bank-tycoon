@@ -1,0 +1,1 @@
+export default function Page(){return <div className='space-y-4'><h1 className='text-2xl font-semibold capitalize'>leaderboard</h1><div className='card'>Module leaderboard connecté au moteur de simulation (v1).</div></div>}

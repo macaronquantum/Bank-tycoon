@@ -1,0 +1,1 @@
+export default function Page(){return <div className='space-y-4'><h1 className='text-2xl font-semibold capitalize'>staff</h1><div className='card'>Module staff connecté au moteur de simulation (v1).</div></div>}
